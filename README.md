@@ -14,4 +14,4 @@ This script will grab all previous Quickbooks Online invoices from the past 24 h
 
     var yesterday = Utilities.formatDate(new Date(Date.now() - 864e5), 'Etc/GMT', 'yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'')  
     
-If you want a time other than 24 hours to run repeadedly you'll have to figure out what the number 864e5 should be instead to get the time you want. Google Apps Script also lets you set the function for every hour or minute. Just make sure it is looking backwards to the last time the script ran so you are not missing data or sending duplicate data.
+If you want a time other than 24 hours to run repeadedly you'll have to figure out what the number 864e5 should be instead to get the time you want. Google Apps Script also lets you set the function for every hour or minute. Just make sure it is looking backwards to the last time the script ran so you are not missing transactions or sending duplicate transactions.
