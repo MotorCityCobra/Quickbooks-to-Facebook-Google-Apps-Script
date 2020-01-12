@@ -2,10 +2,10 @@
 
 Modification to goelp's Google Apps Script Oauth2 script [here](https://gist.github.com/goelp/945ee0583e1df9663cc9e17ae5a2b9bb)
 
-This script will grab all previous Quickbooks Online invoices from the past 24 hours (or time you specify) and send the amount, customer email, and phone number to your Offline Conversion set of your Ad Account in Facebook. You'll need to set up an app in Intuit (quickbooks for developers) and an app in Facebook and create a system user for it. This app will connect to Quickbooks via Oauth2 and your Facebook credentials will go in the function Past24hConversions().
+This script will grab all previous Quickbooks Online invoices from the past 24 hours (or time you specify) and send the amount, customer email, and phone number to your Offline Conversion set of your Ad Account in Facebook. You'll need to set up an app in Intuit (quickbooks for developers) and an app in Facebook and create a System User for it in your Facebook Business Settings. This Google Apps Script will connect to Quickbooks via Oauth2 and your Facebook credentials will go in the function Past24hConversions().
 
-1. Enter all credentials from your app on Intuit.
-2. Publish the app.
+1. Enter your Client ID and Client Secret from Intuit in the top of the script.
+2. Publish the app. (Publish > Deploy as web app...)
 3. Run the function logRedirectUri() and go to view > Logs and paste the link in bottom of top code block and in your Intuit app.
 4. Run the Run() function and Oauth2 the app with Quickbooks.
 5. Add all credentials in Past24hConversions(). Company ID, Facebook conversion ID and access token.
