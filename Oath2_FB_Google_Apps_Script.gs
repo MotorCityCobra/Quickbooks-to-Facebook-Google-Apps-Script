@@ -165,9 +165,6 @@ function Past24hConversions() {
       var hashedPhoneNumber = GAS_sha256(custPhoneNum)
     }
     
-
-    
-    // Offline Conversion to Facebook if customer name contains the mark
     if (data4.Customer.DisplayName) {
       //sheet.appendRow([data03.Customer.PrintOnCheckName, BillEmail, hashedEmailAddress, custPhoneNum, hashedPhoneNumber]);
 
