@@ -136,7 +136,6 @@ function Past24hConversions() {
     var count = Object.keys(data3.CDCResponse[0].QueryResponse[1].Invoice).length;
   }
   
-  var lena = []
   for (var i = 0; i < count; i++) {
     var hashedPhoneNumber = null
     var hashedEmailAddress = null
