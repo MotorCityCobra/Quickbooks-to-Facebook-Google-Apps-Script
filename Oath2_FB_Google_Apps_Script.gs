@@ -150,7 +150,7 @@ function Past24hConversions() {
       var custN = wing.CustomerRef.value
     }
     if (wing.BillEmail) {
-      var email = wing.BillEmail.Address // DELETE ME
+      var email = wing.BillEmail.Address
       var hashedEmailAddress = GAS_sha256(wing.BillEmail.Address);
     }
     
